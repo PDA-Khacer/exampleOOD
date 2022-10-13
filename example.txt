@@ -1,0 +1,42 @@
+shop máy tính
+
+-------linh kiện------ mỗi cái có giá tiền + thông số + detail riêng
+-ram (8,16,32gb)
+-chip (i5,i7, m2, ...)
+-main (b360, b365, ryzen 9, b450.....)
+-GPU (RTX2080, 1660, 1060, ryzen 6000, ..... )
+-nguồn (350w, 450w, 550w, ...)
+-SSD (128,256,512Gb)
+------providers-------
+ASUS
+MSI
+Kingston
+ryzen
+gigabite
+
+-> 1 provide có thể cung cấp nhiều loại linh kiện khác nhau, và có thể cung cấp
+
+
+
+-> 1 provide có thể cung cấp nhiều loại linh kiện khác nhau, và có thể cung cấp thêm các loại LK khác  về sau
+
+------------------------------------shop
+-> build 1 cái case
+--> customer có thể chọn loại linh kiện ở phía trên
+(1-2 ram + 1 chip + 1 main + 1 gpu + 1 nguồn)  => tạo thành 1 cái pc
+
+khi active => các linh kiện active => print thông tin của cái pc => được build  từ những gì, detail cấu hình
+
+
+-------------------- nâng cao--------------
+ mỗi linh kiện có các giao thức khác nhau, vd:
+ ram: bus 2666, 2400, 3200
+ chip: socket -   LGA370, LGA473, LGA478, AMD 462, 754, 939
+ GPU: 60hz, 75hz, 144hz
+ -SSD (pci, nvme)
+ ---> mỗi main chỉ làm việc với các linh kiện phù hợp với giao thức:
+ vd: b360 chỉ chạy với chip có socket L, bus 3200 trở xuống, gpu <=75hz , GPU RTX, GTX , ko chạy ryzen
+     ryzen 9 chỉ chạy với chip có socket  AMD, chạy đc tất cả các loại GPU
+	 b450 có thể chạy đc với cả chip có socket L và AMD, tất cả các GPU
+
+==> implement cái main để nó chỉ nhận loại link kiện phù hợp vs giao thức
